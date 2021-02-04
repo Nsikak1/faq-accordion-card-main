@@ -76,9 +76,10 @@ ul {
   padding: 1rem 0.6rem 1rem 0;
 }
 .questions::after {
-  content: "\25bc";
+  content: "\2304";
   position: absolute;
-  font-size: 12px;
+  font-size: 1.4rem;
+  top: 1%;
   right: 1%;
   color: var(--caret-color);
 }
@@ -92,8 +93,13 @@ ul {
   font-family: "Kumbhsans";
   font-weight: 700;
 }
-.faq ~ .questions::after:hover {
-  color: blue;
+.faq ~ .questions:hover:after {
+  content: "\2303";
+  position: absolute;
+  font-size: 1.4rem;
+  right: 1%;
+  top: 25%;
+  color: var(--caret-color);
 }
 
 .questions:hover > .question {

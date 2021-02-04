@@ -42,6 +42,7 @@ body {
 .image_sidebar {
   background: url("../images/bg-pattern-desktop.svg") no-repeat,
     url("../images/illustration-woman-online-desktop.svg") no-repeat;
+  background-size: contain, contain;
   background-position: right 70px bottom -170px, left -70px bottom 70px;
   display: flex;
   justify-content: center;

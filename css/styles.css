@@ -1,0 +1,109 @@
+:root {
+  --divider: hsl(240, 5%, 91%);
+  --text-color: hsl(237, 12%, 33%);
+  --caret-color: hsl(14, 88%, 65%);
+}
+@font-face {
+  font-family: "kumbhsans";
+  src: url("./KumbhSans-Light.ttf");
+}
+@font-face {
+  font-family: "Kumbhsans-Bold";
+  src: url("./KumbhSans-Bold.ttf");
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 16px;
+  font-family: "Kumbhsans";
+}
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+.container {
+  background-color: white;
+  position: relative;
+  border-radius: 1rem;
+  width: 65%;
+  height: 30rem;
+  display: flex;
+  flex-flow: row nowrap;
+  /* overflow: hidden; */
+  z-index: 1;
+}
+.image_sidebar {
+  background: url("../images/bg-pattern-desktop.svg") no-repeat,
+    url("../images/illustration-woman-online-desktop.svg") no-repeat;
+  background-position: right 70px bottom -170px, left -70px bottom 70px;
+  display: flex;
+  justify-content: center;
+  min-width: 50%;
+}
+
+.box_img {
+  z-index: 2;
+  position: absolute;
+  left: -10%;
+  bottom: 22%;
+}
+ul {
+  list-style-type: none;
+}
+.faq_sidebar {
+  margin-right: 5rem;
+  padding: 2rem 0;
+  width: 100%;
+}
+.faq {
+  margin: 2rem 0 1rem;
+  font-family: "Kumbhsans-Bold";
+}
+
+.questions {
+  display: flex;
+  position: relative;
+  flex-flow: column wrap;
+  border-bottom: 1px solid var(--divider);
+  color: var(--text-color);
+  padding: 1rem 0.6rem 1rem 0;
+}
+.questions::after {
+  content: "\25bc";
+  position: absolute;
+  font-size: 12px;
+  right: 1%;
+  color: var(--caret-color);
+}
+.answer {
+  display: none;
+  font-size: 12px;
+  margin: 0.4rem 0;
+  color: hsl(240, 6%, 50%);
+}
+.question {
+  font-family: "Kumbhsans";
+  font-weight: 700;
+}
+.faq ~ .questions::after:hover {
+  color: blue;
+}
+
+.questions:hover > .question {
+  font-family: "Kumbhsans-Bold";
+}
+.questions:hover > .answer {
+  display: block;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 1%;
+}

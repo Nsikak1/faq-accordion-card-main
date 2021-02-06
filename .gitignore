@@ -20,3 +20,4 @@ dist
 hint-report
 webpack.config.js
 src
+.vscode

@@ -118,6 +118,7 @@ details[open] > .question::after {
     flex-basis: 90%;
     margin-top: auto;
     align-items: center;
+    margin-bottom: auto;
   }
 }
 

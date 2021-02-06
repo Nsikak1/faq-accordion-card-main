@@ -3,5 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "Nsikak",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "sass-loader": "^10.1.1"
+  },
+  "dependencies": {
+    "css-loader": "^5.0.1",
+    "sass": "^1.32.6",
+    "style-loader": "^2.0.0",
+    "webpack-node-externals": "^2.5.2"
+  }
 }

@@ -54,6 +54,7 @@ summary::-webkit-details-marker {
   flex-flow: column wrap;
   z-index: 2;
   justify-content: center;
+  padding-left: 0.3rem;
 }
 .faq {
   margin: 1rem 0;
